@@ -2,15 +2,13 @@
 
 MongoDB DashBoard: [LINK](https://charts.mongodb.com/charts-project-0-cbzai/public/dashboards/091bc68f-76df-48c0-aa69-b21af14c0a8a)
 
-
-
 ### Example Schedule: 
 
-![Image text]([https://raw.github.com/zangjiucheng/UWaterlooCourseHelperEngine/blob/Release/schedule.jpg](https://raw.githubusercontent.com/zangjiucheng/UWaterlooCourseHelperEngine/Release/schedule.jpg))
+![Image text](https://raw.githubusercontent.com/zangjiucheng/UWaterlooCourseHelperEngine/Release/schedule.jpg)
 
 ## This Version Still on Test! 
 
-Install Steps: 
+#### Install Steps: 
 1. Install Python3 (Developed on py3.11) [Python Website](https://www.python.org/downloads/)
 2. Clone this Repository
 3. Go into ```OnlineVersion``` Folder
