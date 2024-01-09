@@ -43,7 +43,7 @@ addCourse(SearchAvalibleInTerm(dbClassUW, "CS 350",6583))
 
 #### Enjoy~ 
 
-#### Any Idea or Question, welcome send me an email at: j7zang@uwaterloo.ca
+#### Any Idea or Question, welcome send me an email via: j7zang@uwaterloo.ca
 
 Or you can open an issue, or just find me in school :) 
 
