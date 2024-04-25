@@ -1,40 +1,40 @@
-- name: 3929 CS 486 LEC 002   Available Seat 0
+- name: 3929 CS 486 LEC 002 | MC 2035 | W. Chen, P. Poupart
   days: TTh
   time: 10:00 - 11:20
   color: "#92AFA6"
 
 
-- name: 3726 CS 246 LEC 002   Available Seat -3
+- name: 3726 CS 246 LEC 002 | MC 1056 | J. Schmitz
   days: TTh
   time: 14:30 - 15:50
   color: "#FBB39A"
 
 
-- name: 3795 CS 245 LEC 001   Available Seat 1
+- name: 3795 CS 245 LEC 001 | PHY 145 | A. Gusakov
   days: TTh
   time: 11:30 - 12:50
   color: "#7C92FA"
 
 
-- name: 3810 CS 349 LEC 001   Available Seat 0
+- name: 3810 CS 349 LEC 001 | MC 2035 | K. Frasheri
   days: MW
   time: 10:00 - 11:20
   color: "#EEF46E"
 
 
-- name: 3926 CS 350 LEC 002   Available Seat 4
+- name: 3926 CS 350 LEC 002 | MC 2038 | K. Lanctot
   days: TTh
   time: 13:00 - 14:20
   color: "#EAEFB5"
 
 
-- name: 3914 MATH 247 LEC 001   Available Seat 15
+- name: 3914 MATH 247 LEC 001 | RCH 206 | C. Sehnem
   days: MWF
   time: 08:30 - 09:20
   color: "#26B3AD"
 
 
-- name: 3960 STAT 231 LEC 003   Available Seat 32
+- name: 3960 STAT 231 LEC 003 | DC 1350 | C. Uggenti
   days: MWF
   time: 11:30 - 12:20
   color: "#C49F18"
