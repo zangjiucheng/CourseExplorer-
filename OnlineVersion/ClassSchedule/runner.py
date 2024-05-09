@@ -1,6 +1,6 @@
 from ClassSchedule.SearchInfo import Course
 from os import remove
-from Utiles.randomColor import randomColor
+from Utiles.randomColor import randomColor, randomGray
 from setting import Setting
 from Utiles.colorMessage import *
 
@@ -37,8 +37,10 @@ def SearchAvalibleInTerm(dbClassUW, courseIndex, classNum=None):
         return [courseIndex]
 
 
-def makeSchedule(dbClassUW, courseWishList):
+def makeSchedule(dbClassUW, courseWishList: list, gray: bool=False):
     classSchedule = dbClassUW.ClassSchedule
+    if gray:
+        print(OKGREEN + "!! Make Schedule with Gray Color !!" + ENDC)
     try:
         remove(setting.outDir)
     except:
@@ -55,6 +57,10 @@ def makeSchedule(dbClassUW, courseWishList):
         else:
             classNum = None
             course = course[0]
-        courseInfo.SearchCourse(CollectionData=classSchedule, courseIndex=course, color=randomColor(),
-                                classNum=classNum)
+        if gray:
+            courseInfo.SearchCourse(CollectionData=classSchedule, courseIndex=course, color=randomGray(),
+                                    classNum=classNum)
+        else:
+            courseInfo.SearchCourse(CollectionData=classSchedule, courseIndex=course, color=randomColor(),
+                                    classNum=classNum)
     ###

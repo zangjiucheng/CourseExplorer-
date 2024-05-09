@@ -7,3 +7,10 @@ def randomColor():
     for i in range(6):
         color += colorArr[randint(0, 14)]
     return "#" + color
+
+
+def randomGray():
+    colorArr = ['1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F']
+    color = colorArr[randint(2, 12)]
+    color += colorArr[randint(0, 14)] 
+    return "#" + color + color + color

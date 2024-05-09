@@ -64,6 +64,6 @@ if __name__ == '__main__':
     addCourse(SearchAvalibleInTerm(dbClassUW, "CS 341", 3881)) # Introduction to Optimization
     # addCourse(SearchAvalibleInTerm(dbClassUW, "CS 350", 3926)) # Operating Systems
     ### List Course End
-    makeSchedule(dbClassUW, courseWishList=courseWishList)
+    makeSchedule(dbClassUW, courseWishList=courseWishList, gray=True)
 
     print(OKGREEN + "\n\n ---------------- Done!!! ---------------- \n\n" + ENDC)
