@@ -52,14 +52,17 @@ if __name__ == '__main__':
     dbClassUW.switchCollection(
           collectionName="Class2024Spring")  # Class2023Fall Class2024Winter Class2024Spring Class2024Fall
 
-    addCourse(SearchAvalibleInTerm(dbClassUW, "CS 486", 3929)) # Introduction to Artificial Intelligence
-    addCourse(SearchAvalibleInTerm(dbClassUW, "CS 246", 3726)) # Object-Oriented Software Development
-    addCourse(SearchAvalibleInTerm(dbClassUW, "CS 245", 3795)) # Logic and Computation
+    # addCourse(SearchAvalibleInTerm(dbClassUW, "CS 486", 3929)) # Introduction to Artificial Intelligence
+    addCourse(SearchAvalibleInTerm(dbClassUW, "CS 246", 3982)) # Object-Oriented Software Development
+    addCourse(SearchAvalibleInTerm(dbClassUW, "CS 246", 3981)) # Algorithms
+    addCourse(SearchAvalibleInTerm(dbClassUW, "CS 245", 3980)) # Logic and Computation
+    addCourse(SearchAvalibleInTerm(dbClassUW, "CS 245", 4923)) # Logic and Computation
     addCourse(SearchAvalibleInTerm(dbClassUW, "CS 349", 3810)) # User Interface Design
-    addCourse(SearchAvalibleInTerm(dbClassUW, "CS 350", 3926)) # Operating Systems
     addCourse(SearchAvalibleInTerm(dbClassUW, "MATH 247", 3914)) # Calculus 3 (Advanced Level)
     addCourse(SearchAvalibleInTerm(dbClassUW, "STAT 231", 3960)) # Introduction to Combinatorics
-
+    addCourse(SearchAvalibleInTerm(dbClassUW, "CO 250", 3721)) # Introduction to Optimization
+    addCourse(SearchAvalibleInTerm(dbClassUW, "CS 341", 3881)) # Introduction to Optimization
+    # addCourse(SearchAvalibleInTerm(dbClassUW, "CS 350", 3926)) # Operating Systems
     ### List Course End
     makeSchedule(dbClassUW, courseWishList=courseWishList)
 
