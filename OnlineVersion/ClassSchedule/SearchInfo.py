@@ -37,7 +37,7 @@ class Course():
                 self.weekDay = "H" if self.time[11:15] == "Th" else self.time[11:15]
                 self.writeSchedule()
             else:
-                print(WARNING + "Z_Z aFor course %s in class %s, Time Data Error Z_Z" % (self.courseIndex, self.classNum)+ENDC)
+                print(WARNING + "Z_Z For course %s in class %s, Time Data Error Z_Z" % (self.courseIndex, self.classNum)+ENDC)
 
     def writeSchedule(self):
         self.fileOut.write(
