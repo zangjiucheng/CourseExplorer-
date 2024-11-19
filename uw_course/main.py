@@ -1,8 +1,9 @@
-from DB.dbClass import dbClass
-from ClassSchedule.runner import SearchCourse, makeSchedule, SearchAvalibleInTerm
-from Utiles.colorMessage import *
+from .DB.dbClass import dbClass
+from .ClassSchedule.runner import SearchCourse, makeSchedule, SearchAvalibleInTerm
+from .Utiles.colorMessage import *
+from .setting import Setting
+
 from os import system
-from setting import Setting
 import argparse
 import sys
 

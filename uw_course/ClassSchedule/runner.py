@@ -1,8 +1,9 @@
-from ClassSchedule.SearchInfo import Course
+from .SearchInfo import Course
+from ..Utiles.randomColor import randomColor, randomGray
+from ..setting import Setting
+from ..Utiles.colorMessage import *
+
 from os import remove
-from Utiles.randomColor import randomColor, randomGray
-from setting import Setting
-from Utiles.colorMessage import *
 
 setting = Setting()
 

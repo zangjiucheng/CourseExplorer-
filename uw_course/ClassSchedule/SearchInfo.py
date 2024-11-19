@@ -1,5 +1,5 @@
 import re
-from Utiles.colorMessage import *
+from ..Utiles.colorMessage import *
 
 
 class Course():

@@ -1,4 +1,4 @@
-from Utiles.manageDBClass import connectDB
+from ..Utiles.manageDBClass import connectDB
 
 
 class dbClass:
