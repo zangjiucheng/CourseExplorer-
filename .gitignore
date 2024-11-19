@@ -162,5 +162,5 @@ cython_debug/
 
 .DS_Store
 .python-version
-scheduled
+schedule.out
 schedule.pdf

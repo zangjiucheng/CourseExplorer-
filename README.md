@@ -1,4 +1,13 @@
-# UWaterlooCourseHelperEngine
+# uw-course
+
+[![PyPI version](https://badge.fury.io/py/uw-course.svg)](https://badge.fury.io/py/uw-course)
+[![Downloads](https://pepy.tech/badge/uw-course)](https://pepy.tech/project/uw-course)
+[![Downloads](https://pepy.tech/badge/uw-course/month)](https://pepy.tech/project/uw-course)
+[![Downloads](https://pepy.tech/badge/uw-course/week)](https://pepy.tech/project/uw-course)
+
+[![GitHub issues](https://img.shields.io/github/issues/zangjiucheng/UWaterlooCourseHelperEngine)](
+
+This is a project for UWaterloo students to help them get course information and generate a schedule for the next term.
 
 MongoDB DashBoard: [LINK](https://charts.mongodb.com/charts-project-0-cbzai/public/dashboards/091bc68f-76df-48c0-aa69-b21af14c0a8a)
 
@@ -6,44 +15,64 @@ MongoDB DashBoard: [LINK](https://charts.mongodb.com/charts-project-0-cbzai/publ
 
 ![Image text](https://raw.githubusercontent.com/zangjiucheng/UWaterlooCourseHelperEngine/Release/schedule.jpg)
 
-## This Version Still on Test! 
+---
 
-#### Install Steps: 
-1. Install Python3 (Developed on py3.11) [Python Website](https://www.python.org/downloads/)
-2. Clone this Repository
-3. Go into ```OnlineVersion``` Folder
-4. Install Requirement With Command ```pip install -r requirement.txt ```
-5. Edit main.py Code With following Command:
+### Install Steps: 
+1. Install Python3 (>= 3.7) [Python Website](https://www.python.org/downloads/)
+2. ```bash
+   pip install uw-course
+   ```
 
-Choose Term To Attend Class: (It Deisides which Term it Will Looking For!)
-#### Current Avalible:  Class2023Fall Class2024Winter (Rest Will be Update Later...)
+---
+
+### Usage:
+
+#### 1. Get Course Information
+1. Run the following command in the terminal
+```bash
+uw-course -c "{CourseName}"
+```
 
 Example:
-```
-dbClassUW.switchCollection(collectionName="Class2023Fall")  # Class2023Fall Class2024Winter 
-```
-
-#### Add Course on to Print List
-
-```
-addCourse(SearchAvalibleInTerm(dbClassUW, COURSE_INDEX))
-addCourse(SearchAvalibleInTerm(dbClassUW, COURSE_INDEX,CLASS_ID)) 
-```
-(If without CLASS_ID, it will print all the avalible class)
-
-#### Example: 
-```
-addCourse(SearchAvalibleInTerm(dbClassUW, "CS 145"))
-addCourse(SearchAvalibleInTerm(dbClassUW, "CS 350",6583))
+```bash
+uw-course -c "CO 250"
 ```
 
-6. Save main.py
-7. Run ```pdfschedule schedule``` in CLI. 
-8. ```schedule.pdf``` will be create in the folder
+#### 2. Get Course Schedule
+1. Create a new file named ```schedule.txt``` in the folder you want to save the schedule
+2. Edit ```schedule.txt``` with the following format:
+```txt
+Class{year}{Winter/Summer/Fall}
 
-#### Enjoy~ 
+{Course}{CourseName}, {ClassID}
+{Course}{CourseName}, {ClassID}
+...
+```
+
+Example:
+```txt
+Class2025Winter
+
+PHYS 234, 7166
+CS 431, 8788
+PMATH 351, 6382
+CO 353, 6157
+STAT 231, 6097
+AMATH 250, 5967
+```
+3. Run the following command in the folder you saved the ```schedule.txt``` file
+```bash
+uw-course -f schedule.txt
+```
+(If you want to get the schedule with gray printables, you can add the ```-g``` flag)
+```bash
+4. The program will generate a ```schedule.pdf``` file in the same folder, which is the schedule you want to see
 
 #### Any Idea or Question, welcome send me an email via: j7zang@uwaterloo.ca
 
-Or you can open an issue, or just find me in school :) 
+---
+
+## License
+
+This project is open-source and can be modified and used for personal or educational purposes. Attribution to the original creator is appreciated. (MIT License)
 

@@ -25,7 +25,7 @@ def parse_arguments():
     """Parse command-line arguments and validate them."""
     parser = argparse.ArgumentParser(
         description="Course Helper: A tool to manage course details and collections.",
-        epilog="""Hint: Use --course to specify a course 
+        epilog=f"""Hint: Use --course to specify a course 
                   or --file to specify a file with courses using schema: {url}"""
     )
     parser.add_argument(
@@ -55,7 +55,7 @@ def main():
         checkDetail(args.course)
     elif args.file:
         with open(args.file, "r") as f:
-            collection = f.readline().strip()
+            collection = f.readline().strip().split("#")[0].strip()
             dbClassUW.switchCollection(collection)
             next(f)  # Skip the first line
             for line in f:
