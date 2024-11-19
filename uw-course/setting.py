@@ -1,5 +1,5 @@
 class Setting:
     def __init__(self):
         self.dataName = "./"
-        self.configFileName = "schedule"
+        self.configFileName = "schedule.out"
         self.outDir = self.dataName + "/" + self.configFileName
