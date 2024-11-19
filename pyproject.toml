@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "uw-course"
-version = "0.1.3"
+version = "0.2.0"
 description = "A course helper tool for managing UW courses schedule"
 authors = [
     { name = "Jiucheng Zang", email = "zangjiucheng@gmail.com" }
