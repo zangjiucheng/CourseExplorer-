@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "uw-course"
+version = "0.1.0"
+description = "A course helper tool for managing UW courses schedule"
+authors = [
+    { name = "Jiucheng Zang", email = "zangjiucheng@gmail.com" }
+]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "attrs",
+    "certifi",
+    "click",
+    "dnspython",
+    "pdfschedule",
+    "Pillow",
+    "pymongo",
+    "PyYAML",
+    "reportlab"
+]
+
+[project.urls]
+homepage = "https://github.com/zangjiucheng/CourseExplorer"
+repository = "https://github.com/zangjiucheng/CourseExplorer"
+
+[project.scripts]
+perspective-transformer = "uw_course.main:main"
+
+[tool.pypi]
+repository = "https://pypi.org/project/uw-course"
+github = "zangjiucheng/CourseExplorer"

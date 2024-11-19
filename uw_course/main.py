@@ -48,8 +48,7 @@ def parse_arguments():
 
     return args
 
-# Press the green button in the gutter to run the script.
-if __name__ == "__main__":
+def main():
     args = parse_arguments()
     gray = args.gray 
     if args.course:
@@ -74,3 +73,6 @@ if __name__ == "__main__":
         makeSchedule(dbClassUW, courseWishList=courseWishList, gray=gray)
         system("pdfschedule " + setting.outDir)
         print(OKGREEN + "\n\n ---------------- Done!!! ---------------- \n\n" + ENDC)
+
+if __name__ == "__main__":
+    main()
