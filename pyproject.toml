@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "uw-course"
-version = "0.1.2"
+version = "0.1.3"
 description = "A course helper tool for managing UW courses schedule"
 authors = [
     { name = "Jiucheng Zang", email = "zangjiucheng@gmail.com" }
@@ -29,7 +29,7 @@ homepage = "https://github.com/zangjiucheng/CourseExplorer"
 repository = "https://github.com/zangjiucheng/CourseExplorer"
 
 [project.scripts]
-perspective-transformer = "uw_course.main:main"
+uw-course = "uw_course.main:main"
 
 [tool.pypi]
 repository = "https://pypi.org/project/uw-course"
