@@ -1,11 +1,7 @@
 # uw-course
 
 [![PyPI version](https://badge.fury.io/py/uw-course.svg)](https://badge.fury.io/py/uw-course)
-[![Downloads](https://pepy.tech/badge/uw-course)](https://pepy.tech/project/uw-course)
-[![Downloads](https://pepy.tech/badge/uw-course/month)](https://pepy.tech/project/uw-course)
-[![Downloads](https://pepy.tech/badge/uw-course/week)](https://pepy.tech/project/uw-course)
 
-[![GitHub issues](https://img.shields.io/github/issues/zangjiucheng/UWaterlooCourseHelperEngine)](
 
 This is a project for UWaterloo students to help them get course information and generate a schedule for the next term.
 
