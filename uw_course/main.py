@@ -37,7 +37,7 @@ def parse_arguments():
         "-f", "--file", type=str, help="Specify a file with collection of courses."
     )
     parser.add_argument(
-        "-e", "--export", action=str, help="Export the schedule to pdf (.out only)."
+        "-e", "--export", type=str, help="Export the schedule to pdf (.out only)."
     )
     parser.add_argument(
         "-g", "--gray", action="store_true", help="Enable gray color mode for output."

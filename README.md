@@ -9,7 +9,7 @@ MongoDB DashBoard: [LINK](https://charts.mongodb.com/charts-project-0-cbzai/publ
 
 ### Example Schedule: 
 
-![Image text](https://raw.githubusercontent.com/zangjiucheng/UWaterlooCourseHelperEngine/Release/schedule.jpg)
+![Image text](demo.png)
 
 ---
 
@@ -61,7 +61,7 @@ AMATH 250, 5967
 uw-course -f schedule.txt
 ```
 (If you want to get the schedule with gray printables, you can add the ```-g``` flag)
-```bash
+
 4. The program will generate a ```schedule.pdf``` file in the same folder, which is the schedule you want to see
 
 #### Any Idea or Question, welcome send me an email via: j7zang@uwaterloo.ca
