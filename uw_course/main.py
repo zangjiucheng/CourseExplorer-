@@ -27,7 +27,8 @@ def parse_arguments():
     parser = argparse.ArgumentParser(
         description="Course Helper: A tool to manage course details and collections.",
         epilog=f"""Hint: Use --course to specify a course 
-                  or --file to specify a file with courses using schema: {url}"""
+                  or --file to specify a file with courses using schema: {url}
+                  or --export to export the schedule to pdf (.out only).""",
     )
     parser.add_argument(
         "-c", "--course", type=str, help="Specify the course to check details for."
@@ -36,14 +37,16 @@ def parse_arguments():
         "-f", "--file", type=str, help="Specify a file with collection of courses."
     )
     parser.add_argument(
+        "-e", "--export", action=str, help="Export the schedule to pdf (.out only)."
+    )
+    parser.add_argument(
         "-g", "--gray", action="store_true", help="Enable gray color mode for output."
     )
 
     args = parser.parse_args()
 
-    # Ensure at least one of `--course` or `--file` is provided
-    if not args.course and not args.file:
-        print("\nError: You must specify at least one of --course or --file.\n")
+    # Ensure at least one argument is provided
+    if len(sys.argv) == 1:
         parser.print_help()
         sys.exit(1)
 
@@ -54,6 +57,9 @@ def main():
     gray = args.gray 
     if args.course:
         checkDetail(args.course)
+    elif args.export:
+        system("pdfschedule " + args.export)
+        print(OKGREEN + "\n\n ---------------- Done!!! ---------------- \n\n" + ENDC)
     elif args.file:
         with open(args.file, "r") as f:
             collection = f.readline().strip().split("#")[0].strip()
